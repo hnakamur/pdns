@@ -333,6 +333,17 @@ Queries to addresses for zones as configured in any of the settings `forward-zon
 
 Number of bits of client IPv4 address to pass when sending EDNS Client Subnet address information.
 
+.. _setting-ecs-ipv4-cache-bits:
+
+``ecs-ipv4-cache-bits``
+-----------------
+.. versionadded:: 4.1.12
+
+-  Integer
+-  Default: 24
+
+Maximum number of bits of client IPv4 address used by the authoritative server (as indicated by the EDNS Client Subnet scope in the answer) for an answer to be inserted into the query cache.
+
 .. _setting-ecs-ipv6-bits:
 
 ``ecs-ipv6-bits``
@@ -343,6 +354,17 @@ Number of bits of client IPv4 address to pass when sending EDNS Client Subnet ad
 -  Default: 56
 
 Number of bits of client IPv6 address to pass when sending EDNS Client Subnet address information.
+
+.. _setting-ecs-ipv4-cache-bits:
+
+``ecs-ipv6-cache-bits``
+-----------------
+.. versionadded:: 4.1.12
+
+-  Integer
+-  Default: 56
+
+Maximum number of bits of client IPv6 address used by the authoritative server (as indicated by the EDNS Client Subnet scope in the answer) for an answer to be inserted into the query cache.
 
 .. _setting-ecs-scope-zero-address:
 
